@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Solar Pulse — Global Solar Irradiation Trend Monitor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="orb" aria-hidden="true"></div>
+      <p class="eyebrow">☀ Solar Pulse — live surface irradiance</p>
+
+      <div class="hero-stat">
+        <span class="hero-number" id="currentValue">--</span>
+        <span class="hero-sub">recorded at Earth's surface, <span id="currentDate">--</span></span>
+      </div>
+
+      <p class="hero-line">Earth's catching more rays every year.</p>
+
+      <div class="divider"></div>
+
+      <p class="hero-secondary">
+        Keep riding the last 30-year brightening trend, and we hit
+        <span class="accent-strong" id="milestoneValue">--</span>
+        by <span class="accent-strong" id="milestoneDate">--</span>.
+      </p>
+    </header>
+
+    <section class="slider-section">
+      <div class="slider-row">
+        <label class="slider-label" for="anchorSlider">Scrub the timeline</label>
+        <span class="slider-value" id="anchorLabel">--</span>
+      </div>
+      <div class="slider-track-wrap">
+        <div class="slider-rail"></div>
+        <div class="slider-fill" id="sliderFill"></div>
+        <input type="range" id="anchorSlider" class="anchor-slider" min="0" max="1000" step="1" />
+      </div>
+      <div id="miniAxis" class="mini-axis"></div>
+    </section>
+
+    <section class="chart-section">
+      <div class="chart-card">
+        <div id="chart" class="chart"></div>
+      </div>
+    </section>
+
+    <footer class="legend" id="legend"></footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script src="data.js"></script>
+  <script src="chart.js"></script>
+</body>
+</html>
