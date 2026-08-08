@@ -6,6 +6,8 @@ point in the timeline and see the projected date it crosses a milestone value.
 
 Static site — just open `index.html` in a browser, no build step or server required.
 
+![Sneak preview of the Solar Pulse dashboard: a glowing gradient headline stat, a scrubber timeline slider, and a chart showing a rising solar irradiance trend](preview.png)
+
 ## Files
 
 - `index.html` — page structure and copy
