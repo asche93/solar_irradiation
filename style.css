@@ -360,6 +360,25 @@ body {
   border-radius: 50%;
 }
 
+/* ---------- AI disclosure ---------- */
+
+.ai-disclosure {
+  max-width: 640px;
+  margin: 22px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  font-family: "Sora", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--ink-dim);
+}
+
+.ai-disclosure strong {
+  color: var(--ink-muted);
+  font-weight: 600;
+}
+
 /* ---------- Motion ---------- */
 
 @keyframes fadeUp {
